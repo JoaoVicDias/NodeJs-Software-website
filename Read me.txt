@@ -1,0 +1,28 @@
+In this project i wanted to make a software website to training and show my skills.
+
+
+
+The languages i used are:
+-Html
+-Css
+-JavaScript
+
+The framework and library are:
+--Framework:
+-NodeJS
+
+--Librarys:
+-Express
+-Body-parser
+-Passport
+-Passport-local
+-Byscrypt
+-nodemon
+-Mongoose
+
+The Database is:
+-MongoDB
+
+
+This Website is an example and must not be taken seriously. 
+Thank for watch.
