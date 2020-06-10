@@ -19,6 +19,9 @@ The framework and library are:
 -Byscrypt
 -nodemon
 -Mongoose
+-Connect-flash
+-Handlebars
+-Session-express
 
 The Database is:
 -MongoDB
