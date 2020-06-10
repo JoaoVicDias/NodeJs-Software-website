@@ -1,0 +1,26 @@
+
+.block-text1{
+    text-align: center;
+    color: #727272;
+    margin-top: 180px;
+    font-size: 35px;
+}
+.block-text1 span{
+    color: #1fb622;
+}
+.block-text1 p{
+    font-size: 20px;
+}
+.block-text2{
+    margin-left: 39%;
+    margin-top: 100px;
+}
+.block-text2 ol li{
+    list-style: disc;
+    color: #727272;
+    font-size: 25px;
+}
+.block-text2 h4{
+    color: #1fb622;
+    font-size: 35px;
+}

@@ -1,0 +1,44 @@
+
+/*Body*/
+.form1{
+    text-align: center;
+    color: #727272;
+    font-size: 24px;
+    margin-top: 200px;
+}
+.form1 input{
+    border-radius: 5px;
+    border-color: white;
+    width: 300px;
+    height: 20px;
+    border: solid;
+    border-style: double;
+}
+.form1 h1{
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    font-size: 28px;
+    color: #616060;
+}
+.email{
+    color: #47b648;
+}
+.form1 button{
+    background-color: #47b648;
+    color: white;
+    height: 50px;
+    width: 250px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+}
+.form1 a {
+    font-size: 17px;
+}
+.form1 a:hover{
+    color: #47b648;
+    text-decoration: underline;
+}

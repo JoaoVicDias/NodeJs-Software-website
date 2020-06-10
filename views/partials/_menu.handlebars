@@ -1,0 +1,23 @@
+<head>
+    <link rel="stylesheet" href="css/_menu.css">
+</head>
+<div class="menu">
+        <a class="first-img" href="/"><img src="/img/sCsiuBmt_400x400.png" alt="Robo 3T"></a>
+        <ol class="second-ol">
+            <li><a href="/">Robo 3T</a></li>
+        </ol>
+        <ol class="third-ol">
+            <li><a href="/download">Download</a></li>
+            <li><a href="/Aboutme">About me</a></li>
+            {{#if user}}
+            {{#each Account}}
+                Welcome {{firstName}} <br>
+                 <a href="/Logout">Logout</a>
+                
+            {{/each}}
+            {{else}}
+            <li><a id="Account" href="/Account">Account</a></li>
+            {{/if}}
+        </ol>
+    </div>
+    

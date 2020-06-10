@@ -1,0 +1,47 @@
+
+/*Body*/
+.block-text{
+    text-align: center;
+    margin-top: 180px;
+    font-size: 35px;
+    color: #727272;
+}
+.block-text span{
+    color: #47b648;
+}
+.block-text p {
+    margin-top: -30px;
+    font-size: 25px;
+}
+.download-button{
+    text-align: center;
+    margin-top: 60px;
+    
+}
+.download-button button{
+    color: white;
+    background-color: #1fb622;
+    border-radius: 10px;
+    border: none;
+    width: 350px;   
+    height: 65px;
+    font-size: 30px;
+}
+.download-button button:hover{
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.main-text{
+    margin-top: 150px;
+    font-size: 18px;
+    color: #3f3e3e;
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    margin-left: 340px;
+    
+}
