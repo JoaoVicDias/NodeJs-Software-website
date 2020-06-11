@@ -22,6 +22,7 @@ The framework and library are:
 -Connect-flash
 -Handlebars
 -Session-express
+-Bootstrap
 
 The Database is:
 -MongoDB
