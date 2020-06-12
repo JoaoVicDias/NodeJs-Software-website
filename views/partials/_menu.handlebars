@@ -10,11 +10,8 @@
             <li><a href="/download">Download</a></li>
             <li><a href="/Aboutme">About me</a></li>
             {{#if user}}
-            {{#each Account}}
-                Welcome {{firstName}} <br>
+                Welcome {{userData.firstName}} <br>
                  <a href="/Logout">Logout</a>
-                
-            {{/each}}
             {{else}}
             <li><a id="Account" href="/Account">Account</a></li>
             {{/if}}

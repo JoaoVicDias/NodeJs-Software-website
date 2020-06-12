@@ -6,58 +6,51 @@ const account = mongoose.model('account')
 const bcrypt = require('bcryptjs')
 const flash = require('connect-flash')
 const passport = require('passport')
+const { UserInfo } = require('git')
 require('../config/auth')(passport)
+const fs = require('fs')
+const file = '/user'
+const path = require('path')
+
+
 
 
 //Creating routes
 
 
-router.get("/",(req,res) =>{
-    account.find().lean().then((Account)=>{
-        res.render('index',{Account:Account})
+router.get('/',(req,res)=>{
+     account.findOne(req.user).lean().then((userData)=>{
+        res.render('index',{userData:userData})
     })
- })
+    
+})
+
+
  
 
  router.get("/Download",(req,res) => {
-     account.find().lean().then((Account)=>{
-         res.render('download',{Account:Account})
-         
-     }).catch((err)=>{
-         console.log(err)
-     })
+    account.findOne(req.user).lean().then((userData)=>{
+        res.render('download',{userData:userData})
+    })
  })
  
  
  router.get("/Aboutme",(req,res)=> {
-     account.find().lean().then((Account)=>{
-         res.render('aboutme',{Account:Account})
-         
-     }).catch((err)=>{
-         console.log(err)
-     })
+    account.findOne(req.user).lean().then((userData)=>{
+        res.render('aboutme',{userData:userData})
+    })
  })
  
 
  router.get("/Account",(req,res) => {
-     account.find().lean().then((Account)=>{
-         res.render('account',{Account:Account})
-         
-     }).catch((err)=>{
-         console.log(err)
-     })
- })
+    res.render('account')
+})
+ 
  
 
  router.get("/CreatingAccount",(req,res) => {
-     account.find().lean().then((Account)=>{
-         res.render('createAccount',{Account:Account})
-         
-     }).catch((err)=>{
-         console.log(err)
-     })
+     res.render('createAccount')
  })
- 
 
  router.post("/CreatingAccount",(req,res)=>{
      let errors = []
@@ -108,15 +101,15 @@ router.get("/",(req,res) =>{
                              req.flash('success_msg',"Your account has been created!")
                              res.redirect("/Account")
                          })
-                     })
+                     })  
                  })
-                
          
              }
          })
      }
      
  })
+ 
  
 
  router.post("/Account",(req,res,next)=>{
@@ -126,7 +119,7 @@ router.get("/",(req,res) =>{
          failureFlash: true
      })(req,res,next)
  })
- 
+
  
  router.get('/Logout',(req,res)=>{
      req.logOut()
