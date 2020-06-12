@@ -2,9 +2,13 @@ const mongoose = require('mongoose')
 const schema = mongoose.Schema
  
 const account = schema({
-    name:{
+    firstName:{
         type: String,
         require: true
+    },
+    lastName:{
+     type: String,
+     require:true
     },
     email:{
         type: String,
