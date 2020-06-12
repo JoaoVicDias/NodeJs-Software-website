@@ -1,4 +1,4 @@
-In this project i wanted to make a software website to training and show my skills.
+In this project i wanted to make a software website to training and show my skills using NodeJs with MVC pattern.
 
 
 
@@ -19,6 +19,10 @@ The framework and library are:
 -Byscrypt
 -nodemon
 -Mongoose
+-Connect-flash
+-Handlebars
+-Session-express
+-Bootstrap
 
 The Database is:
 -MongoDB
