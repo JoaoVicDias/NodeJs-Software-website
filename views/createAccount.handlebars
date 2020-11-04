@@ -2,27 +2,27 @@
 <head>
     <link rel="stylesheet" href="/css/createAccount.css">
 </head>
-{{#each errors}}
+<main>
+    {{#each errors}}
 <div class="alert alert-danger">{{text}}</div>
 {{else}}
 {{/each}}
-<body>
-    <div class="block1">
+    <section class="block1">
         <div class="form1">
             <h1>Creating Account:</h1>
             <form action="/CreatingAccount" method="POST">
                 <label for="name1" >First name:</label>
-                    <input type="text" name="firstName"><br><br><br>
+                    <input type="text" name="firstName">
                 <label for="name2">Last name:</label>
-                    <input type="text" name="lastName"><br><br><br>
+                    <input type="text" name="lastName">
                 <label class="email" for="email"><span>Email:</span></label>
-                    <input  type="email" name="email"><br><br><br>
+                    <input  type="email" name="email">
                 <label for="password">Password:</label>
-                    <input type="password" name="password"><br><br><br>
+                    <input type="password" name="password">
                 <label for="password-2">Repeate your password:</label>
-                    <input type="password" name="password2"><br>
-                <button>Create</button><br>
-
+                    <input type="password" name="password2">
+                <button>Create</button>
             </form>
         </div>
-    </div>
+    </section> 
+</main>

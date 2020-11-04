@@ -1,37 +1,70 @@
 
 /*Body*/
-.form1{
-    text-align: center;
-    color: #727272;
-    font-size: 20px;
-    margin-top: 140px;
+body{
+    height: 100vh;
+    width: 100vw;
 }
+
+main{
+    margin: 5rem 0;
+}
+
+.block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form1 h1{
+    font-size: 1.8rem;
+    color: #616060;
+    margin: 2rem 0;
+}
+
+.form1 form{
+    display: flex;
+    flex-direction: column;
+}
+
 .form1 input{
     border-radius: 5px;
-    border-color: white;
-    width: 300px;
-    height: 20px;
-    border: solid;
-    border-style: double;
+    width: 35vw;
+    border:2px solid #47b648;
 }
-.form1 h1{
-    margin-top: -30px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    font-size: 28px;
-    color: #616060;
-}
+
 .email{
     color: #47b648;
 }
+
 .form1 button{
     background-color: #47b648;
     color: white;
-    height: 50px;
-    width: 250px;
-    margin-top: 20px;
+    margin: 30px 0;
+    padding: 10px;
+    width: 20vw;
     border-radius: 5px;
     border: none;
-    font-size: 23px;
     cursor: pointer;
+}
+
+
+@media(max-width:640px){
+    .form1 h1{
+        text-align: center;
+    }
+
+    .form1 label{
+    text-align: center;
+    }
+
+    .form1 input{
+        width: 100vw;
+    }
+
+    .form1 button{
+        width: 70vw;
+        margin: 30px auto;
+    }
+
 }

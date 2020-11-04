@@ -1,50 +1,70 @@
 
 /*Body*/
-.block-text1{
-    margin-top:300px;
-    margin-left: 220px;
-    font-size: 30px;
-    color: #727272;
-    
+
+
+.main__first--content{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100vw;
 }
+
+.block-text1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    line-height: 2rem;
+}
+
+.block-text1 h1{
+    color: #727272;
+}
+
 .block-text1 span{
     color:#47b648;
     font-weight: 600;
 }
+
 .block-text1 p{
-    font-size: 23px;
+    font-size: 1.3rem;
+    min-width: 160px;
 }
-.block-text2{
-    margin-left: 900px;
-    margin-top: -300px;
-    
-}
-.block-text2 p{
-    font-size: 20px;
+
+.block-2 h6{
+    font-size: 1.2rem;
     color:#47b648;
 }
-.block-text2 ol li{
-    margin-top: 20px;
-    font-size: 19px;
+
+.block-2 ul{
+    margin: 0;
+    padding: 0;
+}
+
+.block-2 ul li{
+    padding: 10px 0;
     color: #727272;   
     list-style: disc;
 }
+
 .download-button{
-    text-align: center;
-    margin-top: 250px;
-    
+   text-align: center;
+   margin: 80px 0;
+   width: 100vw;
 }
+
 .download-button button{
     color: white;
     background-color: #1fb622;
     border-radius: 10px;
+    padding: 10px 20px;
     border: none;
-    width: 350px;   
-    height: 65px;
-    font-size: 30px;
-
+    font-size: 1.6rem;
 }
-.download-button button:hover{
+
+.download-button button:hover,
+.download-button button:active{
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
     -o-transform: scale(1.03);
@@ -52,14 +72,54 @@
     transform: scale(1.03);
     cursor: pointer;
 }
+
 .main-text{
-    margin-top: 260px;
-    font-size: 18px;
+    padding: 10px;
+    margin: 100px 0;
     color: #3f3e3e;
-    width: 900px;
-    height: 500px;
-    text-align: center;
-    margin-left: 340px;
-    
+    width: 100vw;
+    text-align: center; 
 }
 
+@media(max-width:740px){
+    .main__first--content{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:640px){
+    main{
+        margin: 3rem 0 0 0;
+    }
+
+    .main__first--content{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .block-2 {
+        padding: 10px;
+    }
+
+    .block-2 h6{
+       margin: 20px 0;
+    }
+
+    .block-2 ul{
+        padding: 15px;
+    }
+
+    .block-2 ul li{
+        padding: 10px 10px;
+    }
+
+    .download-button button{
+        padding: 6px 12px;
+    }
+
+    
+    .main-text p{
+        padding: 10px;
+    }
+}

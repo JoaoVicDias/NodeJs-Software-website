@@ -1,26 +1,37 @@
+.block-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .block-text1{
-    text-align: center;
     color: #727272;
-    margin-top: 180px;
-    font-size: 35px;
+    text-align: center;
+    font-size: 2.3rem;
 }
+
 .block-text1 span{
     color: #1fb622;
 }
+
 .block-text1 p{
-    font-size: 20px;
+    font-size: 1.3rem;
 }
+
 .block-text2{
-    margin-left: 39%;
-    margin-top: 100px;
+  margin: 3rem 0;
 }
-.block-text2 ol li{
+
+.block-text2 ul li{
     list-style: disc;
+    padding: 3px 0;
     color: #727272;
-    font-size: 25px;
+    font-size:1.7rem;
 }
+
 .block-text2 h4{
     color: #1fb622;
-    font-size: 35px;
+    text-align: center;
+    font-size: 2.3rem;
 }
