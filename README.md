@@ -15,16 +15,16 @@ This project was developed with NodeJS,handlebars,css and MongoDB and is inspire
 
 ### How is the site?
   #### Index:
-   ![](indexgif)
+   ![](index.gif)
    
    ### Download:
-   ![](download.gif)
+   ![](download.png)
    
    #### About me:
-   ![](about-me.gif)
+   ![](about-me.png)
    
    ### Account:
-   ![](account.gif)
+   ![](account.png)
    
 
 ### Stack 
