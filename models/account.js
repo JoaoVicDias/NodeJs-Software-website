@@ -25,3 +25,8 @@ const account = schema({
 
 
 mongoose.model("account",account)
+
+
+
+
+mongoose.model("account",account)
